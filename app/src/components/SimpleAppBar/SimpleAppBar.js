@@ -27,6 +27,7 @@ function SimpleAppBar(props) {
                     </Typography>
                     <Counter
                         score={props.score}
+                        highScore={props.highScore}
                      />
                 </Toolbar>  
             </AppBar>

@@ -71,6 +71,7 @@ class App extends Component {
     return <div className="App">
 				<SimpleAppBar
           score={this.state.score}
+          highScore={this.state.highScore}
         />
           <Wrapper>
             {
