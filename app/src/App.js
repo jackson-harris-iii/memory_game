@@ -26,6 +26,8 @@ class App extends Component {
       this.setState({ score: 0 })
       this.setState({ clickedCharacters: [] })
       this.setState({ characters: this.__shuffle(this.state.characters)})
+      this.__highScore()
+
     }
     else {
       let alreadyClicked = this.state.clickedCharacters
@@ -57,6 +59,12 @@ class App extends Component {
     }
 
     return false;
+  }
+
+  __highScore = () => {
+    if (this.state.score > this.state.highScore){
+      this.setState({highScore: this.state.score})
+    }  
   }
 
   render() {
