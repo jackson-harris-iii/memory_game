@@ -8,12 +8,31 @@ import Wrapper from "./components/Wrapper"
 class App extends Component {
   state = {
     characters,
-    score: 0
+    clickedCharacters: [],
+    score: 0,
+    highScore: 0
+  }
+
+  componentWillMount() {
+    this.setState({ characters: this.__shuffle(this.state.characters) })
   }
 
   updateScore = () => {
     this.setState({ score: this.state.score + 1})
   }
+
+  // shuffleCharacters = () => {
+  //   this.setState({characters: this.__shuffle(this.state.characters)})
+  // }
+
+  __shuffle = (a) => {
+    console.log(a)
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a
+}
 
   render() {
     return <div className="App">
@@ -21,6 +40,7 @@ class App extends Component {
           score={this.state.score}
         />
           <Wrapper>
+            {/* {this.shuffleCharacters(characters)} */}
             {
               this.state.characters.map(character =>(
                 <CharCard
