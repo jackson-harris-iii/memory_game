@@ -19,11 +19,13 @@ function AutoGrid(props) {
     const { classes } = props;
 
     return (
-        <div className={classes.root}>
-            <Grid container spacing={16}>
+        <Grid 
+            container 
+            className={classes.root}
+            container spacing={24}
+            >
             {props.children}
             </Grid>
-        </div>
     );
 }
 
