@@ -19,11 +19,8 @@ class App extends Component {
 
   updateScore = () => {
     this.setState({ score: this.state.score + 1})
+    this.setState({ characters: this.__shuffle(this.state.characters) });
   }
-
-  // shuffleCharacters = () => {
-  //   this.setState({characters: this.__shuffle(this.state.characters)})
-  // }
 
   __shuffle = (a) => {
     console.log(a)
@@ -40,7 +37,6 @@ class App extends Component {
           score={this.state.score}
         />
           <Wrapper>
-            {/* {this.shuffleCharacters(characters)} */}
             {
               this.state.characters.map(character =>(
                 <CharCard
