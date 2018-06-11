@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import SimpleAppBar from "./components/SimpleAppBar"
 import CharCard from "./components/CharCard"
 import characters from "./characters.json"
@@ -30,10 +29,11 @@ class App extends Component {
 
     }
     else {
+      //if the clicked character has not been clicked they are added to the clicked characters array
       let alreadyClicked = this.state.clickedCharacters
       alreadyClicked.push(clickedCharacter);
       this.setState({ clickedCharacters: alreadyClicked })
-      console.log(this.state.clickedCharacters)
+    
       //updates score on character click
       this.setState({ score: this.state.score + 1 })
 
@@ -84,7 +84,7 @@ class App extends Component {
                   updateScore={this.updateScore}
                 />
             ))}
-        </Wrapper>    
+        </Wrapper>   
 			</div>;
   }
 }

@@ -4,8 +4,15 @@ import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import brown from '@material-ui/core/colors/brown'
 import Counter from "../Counter"
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+
+const theme = createMuiTheme({
+    palette: {
+        primary: { main: '#795548' }, // Purple and green play nicely together.
+        secondary: { main: '#11cb5f' }, // This is just green.A700 as hex.
+    },
+});
 
 const styles = {
     root: {
@@ -13,14 +20,13 @@ const styles = {
     },
 };
 
-const brownC = brown[700]
-
 
 function SimpleAppBar(props) {
     const { classes } = props;
     return (
+        <MuiThemeProvider theme={theme}>
         <div className={classes.root}>
-            <AppBar position="static" color='primary'>
+            <AppBar position="static" color="primary">
                 <Toolbar>
                     <Typography variant="title" color="inherit">
                         Memory Game
@@ -32,6 +38,7 @@ function SimpleAppBar(props) {
                 </Toolbar>  
             </AppBar>
         </div>
+        </MuiThemeProvider>
     );
 }
 
