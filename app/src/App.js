@@ -23,11 +23,9 @@ class App extends Component {
     console.log(this.state.clickedCharacters)
     //checks to see if characters have been clicked previously
     if (this.__inArray(clickedCharacter, this.state.clickedCharacters)){
-      this.setState(
-        { score: 0 }, 
-        { clickedCharacters: [] }, 
-        { characters: this.__shuffle(this.state.characters) }
-      )
+      this.setState({ score: 0 })
+      this.setState({ clickedCharacters: [] })
+      this.setState({ characters: this.__shuffle(this.state.characters)})
     }
     else {
       let alreadyClicked = this.state.clickedCharacters
