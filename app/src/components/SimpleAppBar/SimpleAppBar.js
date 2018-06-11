@@ -4,6 +4,8 @@ import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
+import brown from '@material-ui/core/colors/brown'
+import Counter from "../Counter"
 
 const styles = {
     root: {
@@ -11,16 +13,22 @@ const styles = {
     },
 };
 
+const brownC = brown[700]
+
+
 function SimpleAppBar(props) {
     const { classes } = props;
     return (
         <div className={classes.root}>
-            <AppBar position="static" color="default">
+            <AppBar position="static" color='primary'>
                 <Toolbar>
                     <Typography variant="title" color="inherit">
                         Memory Game
-          </Typography>
-                </Toolbar>
+                    </Typography>
+                    <Counter
+                        score={props.score}
+                     />
+                </Toolbar>  
             </AppBar>
         </div>
     );

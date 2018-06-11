@@ -18,5 +18,41 @@
         "image":
             "https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/8/80/Anduin_Wrynn%28110%29.png?version=ba8ecc39b3fdd4a2ede72e046c434454",
         "Class": "Priest"
+    },
+    {
+        "id": 4,
+        "name": "Rexxar",
+        "image": "https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/a/a0/Rexxar%28484%29.png?version=c21b57837db15d20cc814f2bf45682b6",
+        "Class": "Hunter"
+    },
+    {
+        "id": 5,
+        "name": "Uther",
+        "image": "https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/4/4d/Uther_Lightbringer%28257%29.png?version=b45ade5ac3fdd2579160fe5d7b7c1b20",
+        "Class": "Paladin"
+    },
+    {
+        "id": 6,
+        "name": "Valeera",
+        "image": "https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/a/a4/Valeera_Sanguinar%282%29.png?version=84a816910b223169eb14cc93c20437b2",
+        "Class": "Rogue"
+    },
+    {
+        "id": 7,
+        "name": "Garrosh",
+        "image": "https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/c/c5/Garrosh_Hellscream%28635%29.png?version=bab934001bb784a94c59a47823d535a7",
+        "Class": "Warrior"
+    },
+    {
+        "id": 8,
+        "name": "Gul'dan",
+        "image": "https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/0/0a/Gul%27dan%28618%29.png?version=90f421585c6f2d493ba94e259a76190e",
+        "Class": "Warlock"
+    },
+    {
+        "id": 9,
+        "name": "Malfurion",
+        "image": "https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/f/fa/Malfurion_Stormrage%28621%29.png?version=b3f5a40e33f33d32995f3becbdd7aa94",
+        "Class": "Druid"
     }
 ]    
