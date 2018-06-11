@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Jaina",
+        "image": "https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/3/3c/Jaina_Proudmoore%28320%29.png?version=eaff61e877de58f581d564ffc37f5876",
+        "Class": "Mage"
+    },
+    {
+        "id": 2,
+        "name": "Thrall",
+        "image":
+            "https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/4/4b/Thrall%28319%29.png?version=adcee55715548b949a7d973c2fddbd95",
+        "Class": "Shaman"
+    },
+    {
+        "id": 3,
+        "name": "Anduin",
+        "image":
+            "https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/8/80/Anduin_Wrynn%28110%29.png?version=ba8ecc39b3fdd4a2ede72e046c434454",
+        "Class": "Priest"
+    }
+]    
