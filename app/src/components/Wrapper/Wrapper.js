@@ -9,7 +9,6 @@ const styles = theme => ({
         flexGrow: 1,
     },
     paper: {
-        padding: theme.spacing.unit * 2,
         textAlign: 'center',
         color: theme.palette.text.secondary,
     },
@@ -22,7 +21,8 @@ function AutoGrid(props) {
         <Grid 
             container 
             className={classes.root}
-            container spacing={24}
+            container spacing={16}
+            justify='center'
             >
             {props.children}
             </Grid>
